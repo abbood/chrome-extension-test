@@ -9,5 +9,10 @@
     "default_icon": "icon.png",
     "default_popup": "popup.html",
     "default_title": "click here!"
-  }
+  },
+  "background": {
+    "scripts": ["eventsPage.js"],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
 }
