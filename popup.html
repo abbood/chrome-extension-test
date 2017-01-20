@@ -7,22 +7,16 @@
 <html>
   <head>
     <title>Documentivly Popup</title>
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-    </style>
   </head>
   <script src="popup.js"></script>
   <body>
-    hello world
+    <div id="authorize-div" style="display: none">
+      <span>Authorize access to Drive API</span>
+      <!--Button for the user to click to initiate auth sequence -->
+      <button id="authorize-button">
+        Authorize
+      </button>
+    </div>
+    <pre id="output"></pre>
   </body>
 </html>
